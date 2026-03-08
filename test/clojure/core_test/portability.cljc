@@ -24,5 +24,6 @@
   (#?(:cljr System.Threading.Thread/Sleep
       :cljs #(js/setTimeout identity %)
       :clj Thread/sleep
-      :lpy time/sleep)
+      :lpy time/sleep
+      :rust sleep)
    ms))

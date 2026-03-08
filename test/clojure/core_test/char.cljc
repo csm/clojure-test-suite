@@ -9,9 +9,9 @@
      \space 32
      \@     64
      \A     65
-     \A     \A
+     \A     \A)
      ;; TODO: Add Unicode tests
-     )
+
 
    #?(:cljs nil :default (is (thrown? Exception (char -1))))
    (is (thrown? #?(:cljs :default :default Exception) (char nil)))))
